@@ -8,6 +8,10 @@ body {
     margin: 0;
     background-color: black;
 }
+.kofi {
+    padding-right: 20px;
+    padding-top: 20px;
+}
 .game-title {
     pointer-events: none;
     position: absolute;
@@ -53,11 +57,14 @@ body {
 </style>
 </head>
 <body style="background:black">
-  <div class="game-title">CELL
-      <span class="game-menu-item"><a class="game-menu-link" href="index.html">home</a></span>
-  </div>
-  <canvas class="game" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
-  <script type="text/javascript">
+    <dif class="kofi">
+    <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me', '#72a4f2', 'R6R21O01DF');kofiwidget2.draw();</script>
+    </dif>
+    <div class="game-title">CELL
+        <span class="game-menu-item"><a class="game-menu-link" href="index.html">home</a></span>
+    </div>
+    <canvas class="game" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+    <script type="text/javascript">
       var Module = {
         preRun: [],
         print: (...args) => console.log('[stdout]: ' + args.join(' ')),
